@@ -379,7 +379,7 @@ class Babydoge {
       logger.error("No accounts added!");
       process.exit();
     }
-    console.log(this.line);
+    console.log('FlashDROP-ID'.yellow);
 
     const buyCards = await this.askQuestion(
       colors.cyan("Do you want to buy new cards? (y/n): ")
