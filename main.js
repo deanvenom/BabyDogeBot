@@ -364,7 +364,37 @@ class Babydoge {
       );
       await new Promise((resolve) => setTimeout(resolve, 1000));
     }
-    console.log("");
+    console.log('');
+};
+
+const printBanner = () => {
+    console.log("\033[1;91m" + 
+` ______  _               _    
+ | ___ \\| |             | |   
+ | |_/ /| |  __ _   ___ | | __
+ | ___ \\| | / _\` | / __|| |/ /
+ | |_/ /| || (_| || (__ |   < 
+ \\____/ |_| \\__,_| \\___||_|\\_\\
+` + "\033[0m" + "\033[1;92m" + 
+` ______                                   
+ |  _  \\                                  
+ | | | | _ __   __ _   __ _   ___   _ __  
+ | | | || '__| / _\` | / _\` | / _ \\ | '_ \\ 
+ | |/ / | |   | (_| || (_| || (_) || | | |
+ |___/  |_|    \\__,_| \\__, | \\___/ |_| |_|
+                       __/ |              
+                      |___/               
+` + "\033[0m" + "\033[1;93m" + 
+`  _   _               _                
+ | | | |             | |               
+ | |_| |  __ _   ___ | | __  ___  _ __ 
+ |  _  | / _\` | / __|| |/ / / _ \\| '__|
+ | | | || (_| || (__ |   < |  __/| |   
+ \\_| |_/ \\__,_| \\___||_|\\_\\ \\___||_| 
+` + "\033[0m" + "\033[1;96m" +
+`---------------------------------------` + "\033[0m\n\033[1;93mScript created by: Black Dragon Hacker\033[0m\n\033[1;92mJoin Telegram: \nhttps://t.me/BlackDragonHacker007\033[0m\n\033[1;91mVisit my GitHub: \nhttps://github.com/BlackDragonHacker\033[0m\n\033[1;96m---------------------------------------\033[0m\n\033[1;38;2;139;69;19;48;2;173;216;230m-------------[XEmpire Bot]-------------\033[0m\n\033[1;96m---------------------------------------\033[0m");
+};
+
   }
 
   async main() {
@@ -379,7 +409,7 @@ class Babydoge {
       logger.error("No accounts added!");
       process.exit();
     }
-    console.log('FlashDROP-ID'.yellow);
+    console.log(this.line);
 
     const buyCards = await this.askQuestion(
       colors.cyan("Do you want to buy new cards? (y/n): ")
