@@ -379,7 +379,7 @@ class Babydoge {
       logger.error("No accounts added!");
       process.exit();
     }
-    console.log("Recode By : FlashDrop");
+    console.log("─═✧✧═─ ℝ𝕖𝕔𝕠𝕕𝕖 𝔹𝕪 : 𝔽𝕝𝕒𝕤𝕙𝔻𝕣𝕠𝕡𝕀𝔻 ─═✧✧═─");
 
     const buyCards = await this.askQuestion(
       colors.cyan("Do you want to buy new cards? (y/n): ")
@@ -448,4 +448,4 @@ if (require.main === module) {
     logger.error(error.stack);
     process.exit(1);
   });
-}
+  }
