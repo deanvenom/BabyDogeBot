@@ -367,15 +367,6 @@ class Babydoge {
     console.log('');
 };
 
-const colors = {
-  reset: '\x1b[0m',
-  red: '\x1b[31m',
-  green: '\x1b[32m',
-  yellow: '\x1b[33m',
-  blue: '\x1b[34m',
-  cyan: '\x1b[36m',
-};
-
 function printBanner() {
   const banner = `
     ██╗████████╗███████╗     ██╗ █████╗ ██╗    ██╗
@@ -384,11 +375,6 @@ function printBanner() {
     ██║   ██║   ╚════██║██   ██║██╔══██║██║███╗██║
     ██║   ██║   ███████║╚█████╔╝██║  ██║╚███╔███╔╝
     ╚═╝   ╚═╝   ╚══════╝ ╚════╝ ╚═╝  ╚══╝╚══╝  `;
-  console.log(colors.green + banner + colors.reset);
-  console.log(colors.green + "    Sonic Testnet Automated bot" + colors.reset);
-  console.log(colors.red + "    NOT FOR SALE = Free to use \n" + colors.reset);
-}
-
 
   }
 
@@ -473,4 +459,4 @@ if (require.main === module) {
     logger.error(error.stack);
     process.exit(1);
   });
-            }
+  }
