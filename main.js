@@ -364,20 +364,8 @@ class Babydoge {
       );
       await new Promise((resolve) => setTimeout(resolve, 1000));
     }
-    console.log('');
+    console.log(colors.green + "    Sonic Testnet Automated bot" + colors.reset);
 };
-
-function printBanner() {
-  const banner = `
-    ██╗████████╗███████╗     ██╗ █████╗ ██╗    ██╗
-    ██║╚══██╔══╝██╔════╝     ██║██╔══██╗██║    ██║
-    ██║   ██║   ███████╗     ██║███████║██║ █╗ ██║
-    ██║   ██║   ╚════██║██   ██║██╔══██║██║███╗██║
-    ██║   ██║   ███████║╚█████╔╝██║  ██║╚███╔███╔╝
-    ╚═╝   ╚═╝   ╚══════╝ ╚════╝ ╚═╝  ╚══╝╚══╝  `;
-
-  }
-
   async main() {
     const dataFile = path.join(__dirname, "data.txt");
     const data = fs
