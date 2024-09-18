@@ -364,8 +364,9 @@ class Babydoge {
       );
       await new Promise((resolve) => setTimeout(resolve, 1000));
     }
-    console.log('');
- {
+    console.log("");
+  }
+
   async main() {
     const dataFile = path.join(__dirname, "data.txt");
     const data = fs
@@ -378,7 +379,7 @@ class Babydoge {
       logger.error("No accounts added!");
       process.exit();
     }
-    console.log(this.line);
+    console.log("Recode By : FlashDrop");
 
     const buyCards = await this.askQuestion(
       colors.cyan("Do you want to buy new cards? (y/n): ")
