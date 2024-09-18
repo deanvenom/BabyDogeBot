@@ -366,7 +366,18 @@ class Babydoge {
     }
     console.log('');
 };
-  
+
+ {
+  const banner = `
+    ██╗████████╗███████╗     ██╗ █████╗ ██╗    ██╗
+    ██║╚══██╔══╝██╔════╝     ██║██╔══██╗██║    ██║
+    ██║   ██║   ███████╗     ██║███████║██║ █╗ ██║
+    ██║   ██║   ╚════██║██   ██║██╔══██║██║███╗██║
+    ██║   ██║   ███████║╚█████╔╝██║  ██║╚███╔███╔╝
+    ╚═╝   ╚═╝   ╚══════╝ ╚════╝ ╚═╝  ╚══╝╚══╝  `;
+
+  }
+
   async main() {
     const dataFile = path.join(__dirname, "data.txt");
     const data = fs
@@ -379,8 +390,7 @@ class Babydoge {
       logger.error("No accounts added!");
       process.exit();
     }
-    console.log(`---------------------------------------` + "\033[0m\n\033[1;93mScript created by: Black Dragon Hacker\033[0m\n\033[1;92mJoin Telegram: \nhttps://t.me/BlackDragonHacker007\033[0m\n\033[1;91mVisit my GitHub: \nhttps://github.com/BlackDragonHacker\033[0m\n\033[1;96m---------------------------------------\033[0m\n\033[1;38;2;139;69;19;48;2;173;216;230m-------------[XEmpire Bot]-------------\033[0m\n\033[1;96m---------------------------------------\033[0m");
-};);
+    console.log(this.line);
 
     const buyCards = await this.askQuestion(
       colors.cyan("Do you want to buy new cards? (y/n): ")
@@ -395,7 +405,7 @@ class Babydoge {
     while (true) {
       const start = performance.now();
 
-      for (const [index, tgData] of daa.entries()) {
+      for (const [index, tgData] of data.entries()) {
         const userData = JSON.parse(
           decodeURIComponent(tgData.split("&")[1].split("=")[1])
         );
